@@ -4,7 +4,7 @@ import path from "path";
 import ejs from "ejs";
 import createBareServer from "@tomphttp/bare-server-node"
 
-const port = process.env.PORT || 813
+const port = process.env.PORT || 3000
 const app = express();
 const __dirname = process.cwd();
 const server = http.createServer();
@@ -64,7 +64,7 @@ server.on("listening", () => {
 });
 
 server.listen({
-  port: 813,
+  port: 3000,
 });
 
 
