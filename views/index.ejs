@@ -10,10 +10,39 @@
 <%- include("partials/navbar") %>
 
 <body>
+  <center>
   <div class = "main-search">
-    <img src = ""/>
+    <img id = "logo" src = "./img/logo.png"/>
+    <br>
+    <h1>kitty cat unblocker</h1>
+    <br>
+    <div id="searchbar">
+      <form>
+        <input placeholder="Search the web freely.">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
   </div>
+</center>
 
+  <!--css-->
+  <style>
+    .main-search{
+      justify-content: center;
+    }
+
+    .logo{
+      justify-content: center;
+      height: 132px;
+      width: 162px;
+      
+    }
+    #searchbar {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+  </style>
   <script src="/js/index.js"></script>
   <script src="/uv/uv.bundle.js"></script>
   <script src="/uv/uv.config.js"></script>
