@@ -1,42 +1,65 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
 
-    <div id="navbar">
-        <ul>
+<div id="navbar">
+    <ul>
+        <li class="nav-item">
             <a href="/">
-                <li class="nav-button">
-                    <i class="fa-solid fa-house"></i>
-                </li>                
+                <i class="fa-solid fa-house"></i>
+                Home
             </a>
+        </li>
+        <li class="nav-item">
             <a href="/gxmes">
-                <li class="nav-button">
-                    <i class="fa-solid fa-gamepad"></i>
-                </li>                
+                <i class="fa-solid fa-gamepad"></i>
+                Games
             </a>
+        </li>
+        <li class="nav-item">
             <a href="/apps">
-                <li class="nav-button">
-                    <i class="fa-solid fa-grid"></i>
-                </li>                
+                <i class="fa-solid fa-grid"></i>
+                Apps
             </a>
+        </li>
+        <li class="nav-item">
             <a href="/settings">
-                <li class="nav-button">
-                    <i class="fa-solid fa-gear"></i>
-                </li>                
+                <i class="fa-solid fa-gear"></i>
+                Settings
             </a>
-        </ul>
-    </div>
-<!--css-->
+        </li>
+    </ul>
+</div>
+
+<!-- CSS -->
 <style>
-    #navbar{
- width: 267px;
- height: 74px;
- flex-shrink: 0;
- border-radius: 50px;
- background: #565656;
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    #navbar {
+        display: flex;
+        background: #565656;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        overflow: hidden;
     }
-    .nav-button {
-        width: 39.058px;
-        height: 34.707px;
-        color: black;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-item {
+        flex: 1;
+        text-align: center;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .nav-item:hover {
+        background: #333333;
+    }
+
+    .fa-solid {
+        margin-bottom: 5px;
     }
 </style>
