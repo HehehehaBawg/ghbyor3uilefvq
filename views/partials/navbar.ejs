@@ -2,22 +2,22 @@
 
 <div id="navbar">
     <ul>
-        <li class="nav-item">
-            <a href="/">
+        <li class="nav-item" id="home">
+            <a href="/" id="home">
                 <i class="fa-solid fa-house"></i>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" id="games">
             <a href="/gxmes">
                 <i class="fa-solid fa-gamepad"></i>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" id="apps">
             <a href="/apps">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" id="settings">
             <a href="/settings">
                 <i class="fa-solid fa-gear"></i>
             </a>
@@ -55,7 +55,12 @@
     .nav-item:hover {
         background: #333333;
     }
-
+    #home:hover {
+        border-radius: 50px 0px 0px 50px;
+    }
+    #settings:hover {
+        border-radius: 0px 50px 50px 0px;
+    }
     .fa-solid {
         margin-bottom: 15px;
     }
