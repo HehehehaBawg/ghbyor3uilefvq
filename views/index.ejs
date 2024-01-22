@@ -16,7 +16,7 @@
     <h1>Kitty cat unblocker</h1>
     <br>
       <form>
-        <input id="searchinput" placeholder="Search the web freely.">
+        <input class="searchinput" placeholder="Search the web freely.">
         <button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
   </div>
@@ -48,18 +48,20 @@
 
     #searchbtn {
       width: 74px;
-      height: 74px;
+      height: 51px;
       flex-shrink: 0;
       border-radius: 0px 50px 50px 0px;
       background: #1E1E1E;
-      color: #1E1E1E;
+      color: #FFF;
     }
 
-    #searchinput {
-      border-radius: 50px;
+    .searchinput {
+      border-radius: 50px 0 0 50px;
       background: #565656;
-      height:74px;
+      width: 275px;
+      height:50px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      text-align: center;
     }
   </style>
   <script src="/js/index.js"></script>
