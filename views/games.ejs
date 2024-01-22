@@ -11,10 +11,21 @@
 <%-include("partials/navbar") %>
 
 <div>
-<form>
-    <input placeholder="Search...">
-</form>
+    <form id="searchbar">
+        <input id="searchInput" placeholder="Search...">
+        <button type="button" onclick="search()">Search</button>
+    </form>
 </div>
+
+<script>
+    function search() {
+
+        let searchTerm = document.getElementById("searchInput").value;
+
+        console.log("Search Term: " + searchTerm);
+    }
+</script>
+
 
     <script src="/js/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>
